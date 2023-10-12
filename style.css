@@ -1,0 +1,144 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "gilroy";
+}
+
+html,
+body {
+        width: 100%;
+        height: 100%;
+}
+
+.container {
+        width: 100%;
+        height: 100vh;
+}
+
+.front {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+}
+
+.back {
+        max-width: 100%;
+        min-width: 100%;
+        height: 100vh;
+}
+
+.back img {
+        width: 100%;
+        height: 110vh;
+        object-fit: cover;
+}
+
+.working-area {
+        width: 82%;
+        height: 100vh;
+        margin: 0 auto;
+        max-width: 1920px;
+        /* border: 1px solid brown; */
+        position: relative;
+}
+
+nav {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+nav img {
+        height: 15vh;
+}
+
+.nleft,
+.nright {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+}
+
+nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2vw;
+        font-weight: 600;
+        font-family: "gilroy", 'arial';
+        pointer-events: all;
+}
+
+.main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0, -29%);
+}
+
+.mainleft {
+        min-width: 50%;
+}
+
+.mainleft .elem h1 {
+        font-family: "kajiro";
+        color: white;
+        font-weight: 100;
+        font-size: 11vw;
+        line-height: .9;
+}
+
+.mainleft .elem {
+        height: 9vw;
+        overflow: hidden;
+}
+
+.mainleft button {
+        padding: .5vw 3vw;
+        font-size: 2vw;
+        font-family: 'kajiro';
+        letter-spacing: 1px;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        pointer-events: all;
+}
+
+.mainright {
+        width: 20%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+}
+
+.mainright p {
+        text-align: right;
+        font-size: .9vw;
+        font-weight: 400;
+}
+
+.mainright .imagediv {
+        width: 100%;
+        height: 170px;
+        background-color: white;
+        margin-top: 2vh;
+        background-image: url(images/jonah-pettrich-V-dfcNnb9OU-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.mainright p:nth-child(3) {
+        margin-bottom: 3vh;
+}
