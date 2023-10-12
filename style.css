@@ -8,7 +8,8 @@
 html,
 body {
         width: 100%;
-        height: 100%;
+        height: 100vh;
+        overflow-y: hidden;
 }
 
 .container {
@@ -33,7 +34,7 @@ body {
 
 .back img {
         width: 100%;
-        height: 110vh;
+        height: 100vh;
         object-fit: cover;
 }
 
